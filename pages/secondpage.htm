@@ -1,0 +1,28 @@
+<div ng-include src="'pages/appHeader.htm'"></div>
+<div class="account-container">	
+	<div class="content clearfix">		
+		<div align="center">    
+            <br><br><br>
+            <div class="row">
+                <div class="form-group">
+                    <img src="img/logo.jpg" class="img-circle" alt="" width="100" height="100">
+                    <br><br>
+                    <label for="Username"><h3>Verify mobile number</h3></label>
+                    <input type="text" style="text-align:center;" ng-model="code" class="form-control" value="Enter code here"/><br><br>
+                    <a href="#/" ng-click="SendCode();" class="btn btn-default">Resend</a>
+                    <a href="#/welcome" ng-click="VerifyCode();" class="btn btn-default">Verify</a>        
+                </div>       
+            </div>
+        </div>		
+	</div>
+</div>
+
+<div class="form-group col-md-6 col-md-offset-3" align="center">            
+    <div>
+        <br><br>
+        <h4><b>Step 2 of 3</b></h4>
+        <p>
+            You have completed first step of the registration process in the EcoBasket organic living community. Now verify the SMS code received on your mobile to complete step 2 of the registration process. We hope to see you soon in this unique community who shares or sells safe-to-eat, home grown food. Good luck with your step towards organic living!
+        </p>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<div ng-include src="'pages/userHeader.htm'"></div>   
+    <h3><div >My Profile</div></h3>
+    <hr>
+    <div class="form-group col-md-offset-2"> 
+    <table>
+        <tr>
+            <td>
+                <img src="img/user.jpg" class="img-circle" alt="" width="200" height="200">
+            </td>
+            <td>
+                <div><b>{{ user.name }}</b></div>
+                <div><b>{{ user.mobile }}</b></div>
+                <div><b>{{ user.email }}</b></div>
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:20px;"></span>
+            </td>
+        </tr>
+    </table>    
+</div>
+
+<hr>
+
+<div class="form-group col-md-offset-2">    
+    <table>
+        <tr>
+            <td>
+                <h3><div>Address</div></h3>
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:20px;"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div><b>House No./ Name:</b> {{ user.address.building_name }}</div>
+                <div><b>Street Number:</b> {{ user.address.street_number }}</div>
+                <div><b>Address 1:</b> {{ user.address.address1 }}</div>
+                <div><b>Landmark:</b> {{ user.address.landmark }}</div>
+                <div><b>Vicinity:</b> {{ user.address.vicinity }} &emsp; <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:24px;"></span></div>
+            </td>
+        </tr>
+    </table>    
+    
+    <hr>
+    
+    <table>
+        <tr>
+            <td>
+                <h3><div>Additional Contact Details </div></h3>
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:20px;"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div><b>Alternate Mobile:</b> {{ user.additional_contact_details.alternate_mobile }}</div>
+                <div><b>Alternate E-Mail:</b> {{ user.additional_contact_details.alternate_email }}</div>
+            </td>
+        </tr>
+    </table>   
+    
+    <hr>
+    
+    <table>
+        <tr>
+            <td>
+                <h3><div>My Sale Location 1</div></h3>
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:20px;"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div><b>Building Name:</b> {{ user.my_sale_location.building_name }}</div>
+                <div><b>Street Number:</b> {{ user.my_sale_location.street_number }}</div>
+                <div><b>Address 1:</b> {{ user.my_sale_location.address1 }}</div>
+                <div><b>Landmark:</b> {{ user.my_sale_location.landmark }}</div>
+                <div><b>Vicinity:</b> {{ user.my_sale_location.vicinity }} &emsp;<span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:24px;"></span></div>            
+            </td>
+       </tr>
+   </table>  
+    
+</div>
+
+<hr>
+
+<!--
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<i class="fa fa-edit" style="font-size:24px;"></i>
+-->
