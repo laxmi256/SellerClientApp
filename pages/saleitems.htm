@@ -1,0 +1,29 @@
+<div ng-include src="'pages/userHeader.htm'"></div>
+<h3><div class="appcolor"><b>Sale Items</b></div></h3>
+<hr>
+<div class="form-group col-md-offset-2" ng-repeat="sellertable in sellertables"> 
+    <h3><div class="appcolor"><b>{{ sellertable.name }}</b></div></h3>
+    <table >
+        <tr>
+            <td> </td>                       
+        </tr>
+        <tr></tr>
+        <tr>
+            <td class="col-md-2">
+                 <img src="{{ sellertable.image }}" class="img-rectangle" alt="" width="100" height="100">
+            </td>
+            <td class="col-md-6">
+                <div><b>Sale on: </b>{{ sellertable.sale_date }} {{ sellertable.sale_time }}</div><br>
+                <div><b>Order by: </b>{{ sellertable.orderby_date }} {{ sellertable.orderby_time }}</div><br>
+                <div><b>Location: </b>{{ sellertable.sale_location }}</div><br>
+            </td>
+            <td class="col-md-3">
+                <a href="#/neworders">
+                    <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                </a>                
+            </td>
+        </tr>        
+    </table>    
+    
+<hr> 
+</div>

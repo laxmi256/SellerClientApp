@@ -22,7 +22,7 @@ ecobasketApp.controller("myprofileController", ['$scope', '$http', '$httpParamSe
             building_name: "TC-1234/567, KRUPA",
             street_number: "Janashakthi Lane",
             address1: "Pongumoodu, Medical College PO",
-            landmark: "Near St. Thomas Cathedral, Pngumoodu, Trivandrum, Kerala",
+            landmark: "Near St. Thomas Cathedral, Pongumoodu, Trivandrum, Kerala",
             vicinity: "7 kms"
         }
     };
