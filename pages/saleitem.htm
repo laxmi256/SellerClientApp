@@ -1,21 +1,55 @@
 <div ng-include src="'pages/userHeader.htm'"></div>
 <h3><div class="appcolor"><b>Sale Item</b></div></h3>
 <hr>
-<h3><div class="appcolor"><b>{{ sellertable.name }}</b></div></h3>
 
-<div class="form-group col-md-offset-2"> 
+
+<div class="form-group col-md-offset-1"> 
+    <h3><div class="appcolor"><b>{{ sellertable.name }}</b></div></h3>
     <table>
         <tr>
-            <td class="col-md-3">
-                <img src="img/user.jpg" class="img-circle" alt="" width="200" height="200">
+            <td class="col-md-1">
+                <img src="img/user1.jpg" class="img-circle" alt="" width="100" height="100">
             </td>
             <td class="col-md-6">
-                <div class="appcolor"><h3><b>{{ user.name }}</b></h3></div>
-                <div><b>{{ user.mobile }}</b></div>
-                <div><b>{{ user.email }}</b></div>                
+                <div><b>Sale on: </b>{{ sellertable.sale_date }} {{ sellertable.sale_time }}</div><br>
+                <div><b>Order by: </b>{{ sellertable.orderby_date }} {{ sellertable.orderby_time }}</div><br>
+                <div><b>Order Value: </b>{{ sellertable.order_value }} (Total {{ sellertable.total_sale_value }}) </div><br>
             </td>
-            <td class="col-md-2">                
-            </td>
-        </tr>
+        </tr>        
     </table>    
+    <table>
+        <tr >
+            <div><b>Location: </b>{{ sellertable.sale_location }}</div>
+        </tr>
+    </table>
+</div>
+<hr>
+
+<div class="form-group col-md-offset-2" ng-repeat="tableitem in tableitems"> 
+     <table>
+         <h3><div class="appcolor"><b>{{ tableitem.name }}</b></div></h3>
+            <tr>
+                <td class="col-md-3">
+                     <img src="img/strawberry.jpg" class="img-rectangle" alt="" width="100" height="100">
+                </td>
+                <td class="col-md-3" align="center">         
+                    <div><b>Quantity</b></div>
+                    <div>Total: {{ tableitem.total_quantity }}</div>
+                    <div>Sold: {{ tableitem.quantity_sold }}</div>
+                    <div>Balance: {{ tableitem.remaining_quantity }}</div>
+                </td>                
+                <td class="col-md-3">
+                    <div><b>Amount</b></div>
+                    <div>Total: {{ tableitem.total_amount }}</div>
+                    <div>Sold: {{ tableitem.amount_sold }}</div>
+                    <div>Balance: {{ tableitem.remaining_amount }}</div>
+                </td>
+                <td class="col-md-3">
+                <a href="#/saleitem" ng-click="SaleItemSelected(sellertable);">
+                    <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                </a>                
+            </td>
+            </tr>         
+    </table>
+    <hr>
 </div>

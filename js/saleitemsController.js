@@ -7,7 +7,9 @@ ecobasketApp.controller("saleitemsController", ['$scope', '$http', '$httpParamSe
             sale_time: "10:00AM-02:00PM",
             orderby_date: "13 Jun 2016 Saturday",
             orderby_time: "9:00PM",
-            sale_location: "Sreekaryam"
+            sale_location: "Sreekaryam",
+            total_sale_value: 4500,
+            order_value: 3300
             
         },       
         {            
@@ -17,7 +19,9 @@ ecobasketApp.controller("saleitemsController", ['$scope', '$http', '$httpParamSe
             sale_time: "10:00AM-02:00PM",
             orderby_date: "13 Jun 2016 Saturday",
             orderby_time: "9:00PM",
-            sale_location: "Sreekaryam"
+            sale_location: "Sreekaryam",
+            total_sale_value: 4500,
+            order_value: 3300
             
         },    
         {
@@ -27,8 +31,9 @@ ecobasketApp.controller("saleitemsController", ['$scope', '$http', '$httpParamSe
             sale_time: "10:00AM-02:00PM",
             orderby_date: "13 Jun 2016 Saturday",
             orderby_time: "9:00PM",
-            sale_location: "Sreekaryam"
-            
+            sale_location: "Sreekaryam",
+            total_sale_value: 4500,
+            order_value: 3300            
         }];
     
     $scope.SaleItemSelected = function(sellertable) {
