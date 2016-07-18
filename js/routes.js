@@ -91,4 +91,14 @@ ecobasketApp.config(function ($routeProvider) {
         templateUrl: 'pages/saleitem.htm',
         controller: 'saleitemController'
     })
+    
+    .when('/editsale', {
+        templateUrl: 'pages/editsale.htm',
+        controller: 'saleitemController'
+    })
+    
+    .when('/edititem', {
+        templateUrl: 'pages/edititem.htm',
+        controller: 'saleitemController'
+    })
 });        

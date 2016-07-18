@@ -148,3 +148,8 @@ ul.topnav li.icon {display: none;}
 {
     background-color: #008f00;
 }
+
+mark { 
+    background-color: #98CC80;
+    color: black;
+}

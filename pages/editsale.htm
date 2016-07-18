@@ -1,0 +1,115 @@
+<div ng-include src="'pages/userHeader.htm'"></div>
+<h3><div class="appcolor"><b>Edit Sale</b></div></h3>
+<hr>
+<div class="form-group col-md-offset-2 appcolor" > 
+    <h3><div><b>{{ sellertable.name }}</b></div></h3>    
+    <table class="appcolor">
+        <tr>
+            <td class="col-md-4">
+                <img src="img/user1.jpg" class="img-circle" alt="" width="200" height="200">
+            </td>            
+            <td>
+                <hr>
+                <table align="center">
+                    <tr>
+                        <td class="col-md-12">
+                            Sale on: {{ sellertable.sale_date }}
+                        </td>
+                        <td class="col-md-1">
+                            <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                                <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                            </a>
+                        </td>
+                    </tr>                    
+                </table>
+                <hr>                
+                <table align="center">
+                    <tr>
+                        <td class="col-md-12">
+                            Start Time: {{ sellertable.sale_start_time }}
+                        </td>
+                        <td class="col-md-1">
+                            <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                                <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                            </a>
+                        </td>
+                    </tr>                    
+                </table>
+                <hr>                
+                <table align="center">
+                    <tr>
+                        <td class="col-md-12">
+                            EndTime: {{ sellertable.sale_end_time }}
+                        </td>
+                        <td class="col-md-1">
+                            <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                                <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                            </a>
+                        </td>
+                    </tr>                    
+                </table>
+                <hr>                
+                <table align="center">
+                    <tr>
+                        <td class="col-md-12">
+                            Order by: {{ sellertable.orderby_date }} {{ sellertable.orderby_time }}
+                        </td>
+                        <td class="col-md-1">
+                            <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                                <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                            </a>
+                        </td>
+                    </tr>                    
+                </table>
+                <hr>        
+                <table align="center">
+                    <tr>
+                        <td class="col-md-12">
+                            Order Status: Open
+                        </td>
+                        <td class="col-md-1">
+                            <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                                <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                            </a>
+                        </td>
+                    </tr>                   
+                </table>
+                <hr>  
+            </td>
+        </tr>
+        <hr>
+         <tr>
+             <td >                   
+                 Location: {{ sellertable.sale_location }}
+             </td>             
+         </tr>
+    </table>     
+</div>
+
+<div class="form-group col-md-offset-2">
+    <table height=100>
+        <tr>
+            <td class="col-md-6">
+                <div>Total Sale Items : 6</div>                
+            </td>
+            <td class="col-md-6">
+                <div>Total Sale Value : 3855.00</div>                
+            </td>            
+        </tr>
+       <tr><br></tr>
+         <tr>
+            <td class="col-md-6">
+                <div>Total Orders : 21</div>                
+            </td>
+            <td class="col-md-6">
+                <div>Total Order Value : 3400</div>                
+            </td>
+        </tr>
+       <tr><br></tr>
+    </table>
+    <div>Order taking closes in 2 Days 11 Hours and 30 Minutes</div>   
+</div>
+            
+            
+            
+              

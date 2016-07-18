@@ -3,7 +3,7 @@
 <hr>
 
 
-<div class="form-group col-md-offset-1"> 
+<div class="form-group col-md-offset-2"> 
     <h3><div class="appcolor"><b>{{ sellertable.name }}</b></div></h3>
     <table>
         <tr>
@@ -11,10 +11,16 @@
                 <img src="img/user1.jpg" class="img-circle" alt="" width="100" height="100">
             </td>
             <td class="col-md-6">
-                <div><b>Sale on: </b>{{ sellertable.sale_date }} {{ sellertable.sale_time }}</div><br>
+                <div><b>Sale on: </b>{{ sellertable.sale_date }} {{ sellertable.sale_start_time }}-{{ sellertable.sale_end_time }}</div><br>
                 <div><b>Order by: </b>{{ sellertable.orderby_date }} {{ sellertable.orderby_time }}</div><br>
                 <div><b>Order Value: </b>{{ sellertable.order_value }} (Total {{ sellertable.total_sale_value }}) </div><br>
             </td>
+            <td class="col-md-4">
+                <a href="#/editsale" ng-click="SaleItemSelected(sellertable);">
+                    <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
+                </a>
+            </td>
+            
         </tr>        
     </table>    
     <table>
@@ -25,7 +31,7 @@
 </div>
 <hr>
 
-<div class="form-group col-md-offset-2" ng-repeat="tableitem in tableitems"> 
+<div class="form-group col-md-offset-4" ng-repeat="tableitem in tableitems"> 
      <table>
          <h3><div class="appcolor"><b>{{ tableitem.name }}</b></div></h3>
             <tr>
@@ -33,19 +39,19 @@
                      <img src="img/strawberry.jpg" class="img-rectangle" alt="" width="100" height="100">
                 </td>
                 <td class="col-md-3" align="center">         
-                    <div><b>Quantity</b></div>
+                    <div><mark>Quantity</mark></div>
                     <div>Total: {{ tableitem.total_quantity }}</div>
                     <div>Sold: {{ tableitem.quantity_sold }}</div>
                     <div>Balance: {{ tableitem.remaining_quantity }}</div>
                 </td>                
                 <td class="col-md-3">
-                    <div><b>Amount</b></div>
+                    <div><mark>Amount</mark></div>
                     <div>Total: {{ tableitem.total_amount }}</div>
                     <div>Sold: {{ tableitem.amount_sold }}</div>
                     <div>Balance: {{ tableitem.remaining_amount }}</div>
                 </td>
                 <td class="col-md-3">
-                <a href="#/saleitem" ng-click="SaleItemSelected(sellertable);">
+                <a href="#/edititem" ng-click="SaleItemSelected(sellertable);">
                     <span class="glyphicon glyphicon-menu-right appcolor" aria-hidden="true" style="font-size:20px;"></span>
                 </a>                
             </td>
