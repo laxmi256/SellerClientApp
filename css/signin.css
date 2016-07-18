@@ -70,3 +70,81 @@
 .appcolor {
   color: #008f00;
 }
+
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #008f00;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #008f00;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:500px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:500px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+    
+  .account-container {
+	width: 100%;
+	display: block;
+	margin: 60px auto 0 auto;
+	
+	background: #f9f9f9;
+	
+	border: 1px solid #d5d5d5;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	box-shadow:  0px 0px 2px #dadada, inset 0px -3px 0px #e6e6e6;
+    background-color: #008f00;
+    }
+    
+    .form-group input
+    {
+        width: 100%;
+    }
+
+}
+
+.navbar,.nav,ul.topnav
+{
+    background-color: #008f00;
+}

@@ -26,6 +26,5 @@ ecobasketApp.controller("myprofileController", ['$scope', '$http', '$httpParamSe
             vicinity: "7 kms"
         }
     };
-    $scope.GetMyProfile = function() {
-    };    
+    myGlobalService.mydetails = $scope.user;
 }]);

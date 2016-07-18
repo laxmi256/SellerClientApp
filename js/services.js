@@ -8,6 +8,8 @@ ecobasketApp.service('myGlobalService', function() {
     this.myTableID = '1';
     this.ids={};
     this.userInfo = false;
+    this.mytable = '';
+    this.mydetails = {};
 });
 
 //'http://ecoorgin.azurewebsites.net/';

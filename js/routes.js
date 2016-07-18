@@ -12,13 +12,53 @@ ecobasketApp.config(function ($routeProvider) {
         controller: 'secondpageController'
     })
     
+    .when('/completeregistration', {
+        templateUrl: 'pages/default.htm',
+        controller: 'welcomepageController'
+    })
+    
+    .when('/explorecommunity', {
+        templateUrl: 'pages/default.htm',
+        controller: 'welcomepageController'
+    })
+    
      .when('/welcome', {
         templateUrl: 'pages/welcomepage.htm',
         controller: 'welcomepageController'
     })
     
+    .when('/settings', {
+        templateUrl: 'pages/default.htm',
+        controller: 'welcomepageController'
+    })
+    
+    .when('/aboutus', {
+        templateUrl: 'pages/aboutus.htm',
+        controller: 'welcomepageController'
+    })
+    
+    .when('/sharestory', {
+        templateUrl: 'pages/default.htm',
+        controller: 'welcomepageController'
+    })
+    
+    .when('/rateapp', {
+        templateUrl: 'pages/default.htm',
+        controller: 'welcomepageController'
+    })
+    
     .when('/myprofile', {
         templateUrl: 'pages/myprofile.htm',
+        controller: 'myprofileController'
+    })
+    
+    .when('/editprofile', {
+        templateUrl: 'pages/default.htm',
+        controller: 'myprofileController'
+    })
+    
+    .when('/locationmap', {
+        templateUrl: 'pages/default.htm',
         controller: 'myprofileController'
     })
     
@@ -45,5 +85,10 @@ ecobasketApp.config(function ($routeProvider) {
     .when('/saleitems', {
         templateUrl: 'pages/saleitems.htm',
         controller: 'saleitemsController'
+    })
+    
+    .when('/saleitem', {
+        templateUrl: 'pages/saleitem.htm',
+        controller: 'saleitemController'
     })
 });        
